@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forms Demo</title>
+</head>
+
+<body>
+  <h1>Forms Demo</h1>
+  <form action="/food">
+    <div>
+      <label for="username">Kullanıcı Adı Giriniz:</label>
+      <input type="text" placeholder="Kullanıcı Adı" id="username" />
+    </div>
+    <label for="username">Şifre:</label>
+    <input type="password" placeholder="Şifre Giriniz" />
+    <input type="color" />
+    <label for="number">numara:</label>
+    <input type="number" />
+    <button>Submit</button>
+  </form>
+  <form action="https://www.google.com.tr/search">
+    <label for="guery">Google </label>
+    <input type="text" id="guery" name="q" />
+    <button>Googleda ara</button>
+  </form>
+
+  <form action="https://www.youtube.com/results">
+    <label for="guery">Youtube </label>
+    <input type="text" id="guery" name="search_query" />
+    <button>Youtubeda ara</button>
+  </form>
+
+  <form action="birds"></form>
+  <input type="checkbox" name="tos" id="agree" checked />
+  <label for="agree">Kabul ediyorum</label>
+
+  <p>
+    <label for="xs">xs:</label>
+    <input type="radio" name="size" id="xs" />
+    <label for="s">s:</label>
+    <input type="radio" name="size" id="s" />
+    <input type="radio" m="size" id="m" />
+    <label for="m">m:</label>
+  </p>
+  <p>
+    <label for="animal">favori hayvanı seç:</label>
+    <select name="animal" id="animal">
+      <option value="fish">Balık</option>
+      <option value="birth">Kuş</option>
+      <option value="cat">Kedi</option>
+  </p>
+  <button>Yolla</button>
+  </p>
+  <p>
+    <label for="cheese">Peynir miktarı</label>
+    <input type="range" name="cheese" id="cheese" min="1" max="100" step="5" value="80" </p>
+
+  <p>
+    <label for="" istek">özel istek</label>
+    <textarea name="istek" id="istek" cols="40" rows="20" paleholder="buraya bir şeyler yazın"></textarea>
+  </p>
+  <button> Yolla </button>
+</form>
+<h2>Validation</h2>
+<form action="/spare">
+  <label for="username">Kullanıcı adı</label>
+<input type="text" name="username" id="first" required />
+  <p>
+<label for="first">İsim giriniz</label>
+<input type="text" name="first" id="first" required 
+minlength="3"
+maxlength="10"
+/>
+</p>
+<h2>Url Doğrulama</h2>
+<p>
+  <input type="url" />
+</p>
+<button>Submit</button>
+
+</body>
+
+</html>
